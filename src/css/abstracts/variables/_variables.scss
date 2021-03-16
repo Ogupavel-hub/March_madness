@@ -1,0 +1,29 @@
+//=======================
+// Точки для media-queries
+//=======================
+$media-big-desktop: 1400px;
+$media-desktop: 1200px;
+$media-tablet-landscape: 900px;
+$media-tablet-portrait: 600px;
+
+//=======================
+// Grid
+//=======================
+$grid-max-width: 1400px;
+$grid-gutter-width: 50px;
+
+//=======================
+// Цвета
+//=======================
+$white: #ffffff;
+$darkest-gray: #222222;
+$dark-gray: #393939;
+$gray: #6f6f6e;
+$light: #eeeeee;
+$black: #000000;
+$green: #58ad52;
+$acid-green: #4add40;
+$red: #E94444;
+$purple: #88a8cf;
+
+$text-color: $light;

@@ -1,0 +1,137 @@
+@import "../deps";
+
+
+// SIZE
+$preview_w: 890;
+$preview_h: 365;
+
+
+.login-page {
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+}
+
+// head
+.head-label-wrapper {
+  background-color: #706e6f;
+  @include vpad(4px, 3px);
+  @include for-tablet-portrait-up() {
+    margin-top: 20px;
+  }
+  @include for-tablet-landscape-up() {
+    padding-top: 5px;
+  }
+
+  .head-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: rem(16);
+    @include for-tablet-portrait-up() {
+      font-size: rem(20);
+    }
+    @include for-tablet-landscape-up() {
+      font-size: rem(26);
+    }
+  }
+}
+
+// form
+.login-form-wrapper {
+
+  .login-preview-wrapper {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 30px;
+    @include for-tablet-portrait-up() {
+      margin-top: 40px;
+      max-width: 540px;
+    }
+    @include for-tablet-landscape-up() {
+      margin-top: 60px;
+      max-width: 660px;
+    }
+
+    .login-preview {
+      overflow: hidden;
+      position: relative;
+      border-radius: 16px 16px 3px 8px;
+      padding-top: #{100% * ($preview_h / $preview_w)};
+
+      .login-preview-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        user-select: none;
+        transform: translateZ(0); // fix chrome img blurry
+      }
+    }
+
+    .login-preview-label {
+      margin: 15px 0 25px;
+      font-weight: bold;
+      font-size: rem(16);
+      transform-style: preserve-3d;
+      line-height: 1.5;
+
+      @include media_interval(420px, 0) {
+        font-size: rem(18);
+      }
+      @include for-tablet-portrait-up() {
+        font-size: rem(22);
+        margin: 20px auto 35px;
+      }
+      @include for-tablet-landscape-up() {
+        font-size: rem(27);
+      }
+    }
+  }
+
+  .login-form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .form-fields {
+
+    }
+    .form-btn-wrap {
+      margin-top: 30px;
+      perspective: 2000px;
+
+      .btn {
+        transform-style: preserve-3d;
+      }
+    }
+  }
+
+  .login-bottom-wrapper {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 40px;
+    @include for-tablet-portrait-up() {
+      max-width: 540px;
+    }
+    @include for-tablet-landscape-up() {
+      margin-top: 65px;
+      max-width: 660px;
+    }
+
+    .login-consent {
+      line-height: 1.3;
+      font-size: rem(13);
+      @include for-tablet-portrait-up() {
+        font-size: rem(14);
+      }
+    }
+  }
+}

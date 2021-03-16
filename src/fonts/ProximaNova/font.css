@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'ProximaNova';
+    /*src: url('proximanova-regular.woff2') format('woff2'),*/
+    /*     url('proximanova-regular.woff') format('woff'),*/
+    /*     url('proximanova-regular.ttf') format('truetype');*/
+    src: url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3") format("woff2"),
+         url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3") format("woff"),
+         url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

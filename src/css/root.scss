@@ -1,0 +1,19 @@
+// third party
+@import '~swiper/swiper.scss';
+@import '~swiper/components/navigation/navigation.scss';
+@import '~swiper/components/pagination/pagination.scss';
+@import '~swiper/components/effect-fade/effect-fade.scss';
+
+// core
+@import "base";
+
+// components
+@import
+  "components/preloader",
+  "components/split_text",
+  "components/field",
+  "components/button",
+  "components/menu",
+  "components/login_page",
+  "components/main_page",
+  "components/leaderboard_page";

@@ -1,0 +1,1 @@
+export const INIT_APP_SUCCESS = 'INIT_APP_SUCCESS';

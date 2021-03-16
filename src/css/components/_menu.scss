@@ -1,0 +1,33 @@
+@import "../deps";
+
+.menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: start;
+  transition: all 200ms ease-out;
+  background: $light;
+  color: $dark-gray;
+  font-size: rem(20);
+  line-height: 1;
+  transform: translateX(calc(100% + 40px)) rotate(-90deg);
+  transform-origin: left bottom;
+
+  &.show {
+    transition: all 200ms ease-in;
+    transform: translateX(100%) rotate(-90deg);
+  }
+
+  a {
+    padding: 10px;
+    font-weight: bold;
+
+    &:hover {
+      box-shadow: 0 0 40px rgba(150, 153, 157, 0.5);
+    }
+  }
+}
