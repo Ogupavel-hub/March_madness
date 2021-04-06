@@ -14,7 +14,7 @@ export const LeaderboardRow = ({ user, className }) => {
 
     return (
         <div className={`leaderboard-row ${className}`}>
-            <div className={place.length > 2 ? "leaderboard-place leaderboard-place-big" : "leaderboard-place"}
+            <div className={place.toString().length > 2 ? "leaderboard-place leaderboard-place-big" : "leaderboard-place"}
                  data-place={numberWithCommas(place)} />
 
             <div className="leaderboard-instagram">
